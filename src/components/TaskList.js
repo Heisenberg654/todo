@@ -17,7 +17,7 @@ export default function TaskList(props) {
       ))}
       <button
         className="delet-all"
-        // onClick={() => props.deleteAllTask(item.id)}
+        onClick={() => props.deleteAllTask()}
       >
         Видалити всі задачі
       </button>

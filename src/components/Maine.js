@@ -27,12 +27,6 @@ export default function Maine() {
     setList([...newList]);
   };
 
-  const deleteAllTask = (id) => {
-    console.log("Видаленя всіх задач", id);
-    const newList = list.filter((task) => id !== task.id);
-    setList([...newList]);
-  };
-
   const completeTask = (id) => {
     const newList = list.map((task) => {
       if (id === task.id) {
@@ -43,7 +37,9 @@ export default function Maine() {
     });
     setList([...newList]);
   };
-
+  const deleteAllTask = () => {
+    setList([]);
+  };
   return (
     <div className="main">
       <h3 className="title">Список завдань</h3>
@@ -52,6 +48,7 @@ export default function Maine() {
         list={list}
         deleteTask={deleteTask}
         completeTask={completeTask}
+        deleteAllTask={deleteAllTask}
       />
     </div>
   );
