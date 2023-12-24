@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  width: 500px; /* ширина */
+  margin: 0 auto; /* центрування блоку */
+  padding: 10px 30px;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: #fef7f7;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 24px;
+  color: rgb(30, 78, 210);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between; /* горизонтально - по краям */
+  align-items: center; /* вертикально - по центру */
+  border-bottom: 1px solid rgb(183, 180, 188); /* нижня рамка пыд задачею */
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(15, 15, 126);
+  border-radius: 4px;
+  font-size: 14px;
+
+  transition: all 0.3s; /* плавна анімація */
+}
+
+.btn:hover {
+  background-color: chocolate;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: silver;
+  letter-spacing: 2px;
+}
+
+.task {
+  color: blue;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.complete:hover {
+  cursor: pointer;
+}
+
+.notcomplete:hover {
+  cursor: pointer;
+}
+
+.delet-all {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(15, 15, 126);
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: all 0.3s; /* плавна анімація */
+}
+
+.delet-all:hover {
+  background-color: chocolate;
+  color: white;
+  cursor: pointer;
+}
